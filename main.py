@@ -10,10 +10,11 @@
 # 4. Использование функций. Ваша программа не должна быть линейной
 import functions
 
-
 while True:
-    print('1. вывод, 2. добавление, 3. поиск')
-    mode = int(input())
+    print('1. вывод,\n'
+          '2. добавление,\n'
+          '3. поиск\n')
+    mode = int(input('Укажите пункт меню(цифра):'))
     if mode == 1:
         functions.show_data()
     elif mode == 2:
