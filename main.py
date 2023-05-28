@@ -13,7 +13,10 @@ import functions
 while True:
     print('1. вывод,\n'
           '2. добавление,\n'
-          '3. поиск\n')
+          '3. поиск\n'
+          '4. редактирование\n'
+          '5. удаление\n')
+    
     mode = int(input('Укажите пункт меню(цифра):'))
     if mode == 1:
         functions.show_data()
@@ -21,5 +24,9 @@ while True:
         functions.add_data()
     elif mode == 3:
         functions.find_data()
+    elif mode == 4:
+        functions.change()        
+    elif mode == 5:
+        functions.del_func()
     else:
         break
